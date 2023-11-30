@@ -3,7 +3,7 @@ const router = express.Router();
 
 const Customer = require(`../models/customer`);
 
-router.get(`/`, (req, res) => {
+router.get(`/login`, (req, res) => {
     res.render(`login`)
 });
 
@@ -24,9 +24,10 @@ router.post(`/login`, async (req, res) => {
         const testingPasswordsMatch = await customer.comparePassword(password)
         
         if (testingPasswordsMatch) {
-            res.redirect(`activities`)
+            res.redirect(`activites`)
         } else {
-            res.end(`hey you either do not exist as a user or you have incorrect login credentials`);
+            res.send(`hey you either do not exist as a user or you have incorrect login credentials`).redirect(`/signup`);
+            
         }
        
     } catch (error) {

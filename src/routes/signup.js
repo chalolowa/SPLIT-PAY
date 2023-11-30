@@ -21,7 +21,7 @@ router.post(`/signup`, async (req, res) => {
 
         const savedCustomer = await newCustomer.save();
 
-        res.redirect(`/activities`);
+        res.redirect(`/activites`);
     }
         
     catch (error) {
