@@ -1,514 +1,308 @@
+<!-- Expenses page -->
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-  
-</body>
-</html>
+<header>
+  <div class="container">
+      <nav class="logo-nav">
+          <div class="logo">
+              <p>Share Wallet</p>
+          </div>
 
-<div class="div">
-  <div class="div-2">
-    <div class="div-3">Share Wallet</div>
-    <div class="div-4">
-      <div class="div-5">Home</div>
-      <div class="div-6">About Us</div>
-      <div class="div-7">Groups</div>
-      <div class="div-8">Expenses</div>
-      <div class="div-9">Activities</div>
-      <div class="div-10">Register Now</div>
-      <div class="div-11">Sign In</div>
-    </div>
+          <ul class="nav-group">
+              <li><a href="Home.html">Home</a></li>
+              <li><a href="Activities.html">Activities</a></li>
+              <li><a href="expenses.html">Expenses</a></li>       
+              <li class="register"><a href="signup.html">Register Now</a></li>
+              <li><a href="signIn.html">Sign In</a></li>
+          </ul>
+      </nav>
   </div>
-  <div class="div-12">
-    <div class="div-13">
-      <div class="div-14">New group</div>
-      <div class="div-15"></div>
-      <div class="div-16">Title</div>
-      <div class="div-17"></div>
-      <div class="div-18">Amount</div>
-      <div class="div-19"></div>
-      <div class="div-20">Description</div>
-      <div class="div-21"></div>
-      <div class="div-22">Time</div>
-      <div class="div-23"></div>
-      <div class="div-24">Paid by:</div>
-      <div class="div-25"></div>
-      <div class="div-26">Split options</div>
-      <div class="div-27">Split equally</div>
-    </div>
-    <div class="div-28">
-      Split 300,,000 Kshs into 2 portions [Maggie k: 150,000KSHs] [David K:
-      150,000 kSHs]
-    </div>
-    <div class="div-29">
-      <div class="div-30"></div>
-      <div class="div-31">Subscribe to our news letter</div>
-    </div>
-  </div>
-  <div class="div-32">
-    <div class="div-33">
-      <div class="div-34">
-        <div class="div-35">Links</div>
-        <div class="div-36">
-          About Us
-          <br />
-          Services
-          <br />
-          Projects
-          <br />
-          Contact Us
-        </div>
+</header>
+
+<section class="sign-in">
+  <div class="container">
+      <div class="wrapper-div">
+          <div class="form-div">
+              <form>
+                  <h3 class="form-heading">Expenses</h3>
+                  <div class="form-group">
+                      <label for="name">Group Name</label>
+                      <input type="text" placeholder="Group Name">
+                  </div>
+                  <div class="form-group">
+                      <label for="name">Title</label>
+                      <input type="text" placeholder="Title">
+                  </div>
+                  <div class="form-group">
+                      <label for="name">Amount</label>
+                      <input type="text" placeholder="Amount">
+                  </div>
+                  <div class="form-group">
+                      <label for="name">Description</label>
+                      <input type="text" placeholder="Description">
+                  </div>
+                  <div class="form-group">
+                      <label for="name">Time</label>
+                      <input type="text" placeholder="Time">
+                  </div>
+                  <div class="form-group">
+                      <label for="name">Paid by</label>
+                      <input type="text" placeholder="Paid by">
+                  </div>
+
+              </form>
+          </div>
       </div>
-      <div class="div-37">Share Wallet</div>
-      <div class="div-38">
-        <div class="div-39">Contacts</div>
-        <div class="div-40">
-          email@gmail.com
-          <br />
-          +2547012345678
-        </div>
+
+      <div class="welcome-section section-margin">
+          <div class="container">
+             <div class="wrapper">
+                  <div class="wallet">
+                      <p>Split options</p>
+                  </div>
+
+                  <div class="subscribe">
+                      <button>Split Equally</button>
+                  </div>
+          
+                  <div class="description">
+                      <p class="one-font">Split 300,000 Kshs into 2 portions [Maggie k: 150,000KSHs] [David K: 150,000 kSHs]</p>
+                  </div>
+          
+                  <div class="newsletter">
+                      <div class="tick-box"></div>
+                      <p class="one-font">Subscribe to our newsletter</p> 
+                  </div>
+             </div>
+          </div>
       </div>
-    </div>
   </div>
-</div>
+</section>
+
+<footer class="footer-section">
+  <div class="container">
+      <div class="footer-wrapper">
+          <div class="">
+              <h3 class="footer-heading">Links</h3>
+              <ul class="footer-items">
+                  <li>About Us</li>
+                  <li>Services</li>
+                  <li>Projects</li>
+                  <li>Contact Us</li>
+              </ul>
+          </div>
+
+          <div class="Project-name">
+              <p>Share Wallet</p>
+          </div>
+
+          <div class="contacts">
+              <div>
+                  <h3 class="footer-heading">Contacts</h3>
+              </div>
+              <div>
+                  <ul class="footer-items">
+                      <li>email@gmail.com</li>
+                      <li>+25476535534</li>
+                  </ul>
+              </div> 
+          </div>
+      </div>
+
+  </div>
+</footer>
 <style>
-  .div {
-    background-color: #fff;
-    display: flex;
-    padding-top: 44px;
-    flex-direction: column;
-    align-items: center;
+  /* common styles */
+  *, *::before, ::after{
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
   }
-  .div-2 {
-    display: flex;
-    width: 100%;
-    max-width: 1320px;
-    align-items: start;
-    justify-content: space-between;
-    gap: 20px;
-    padding: 0 20px;
+  :root{
+      --green: #50C878;
   }
-  @media (max-width: 991px) {
-    .div-2 {
+  ul{
+      list-style-type: none;
+  }
+  a{
+      text-decoration: none;
+      display: inline-block;
+  }
+  .container{
+      max-width: 1100px;
+      width: 80%;
+      margin: 0 auto;
+  }
+  img{
       max-width: 100%;
-      flex-wrap: wrap;
-    }
   }
-  .div-3 {
-    color: #000;
-    margin-top: 4px;
-    font: 700 32px Inter, sans-serif;
+  .section-margin{
+      margin: 5rem 0;
   }
-  .div-4 {
-    align-self: stretch;
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    gap: 20px;
+
+  /* common styles */
+  .logo-nav{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 2rem 0;
   }
-  @media (max-width: 991px) {
-    .div-4 {
-      max-width: 100%;
-      flex-wrap: wrap;
+  .nav-group{
+      display: flex;
+      align-items: center;
+  }
+  .nav-group li{
+      padding-right: 1rem;
+  }
+  .register{
+      background: yellow;
+      padding: 10px 15px;
+      border-radius: 20px;
+      margin-right: 1rem;
+  }
+  .nav-group li a{
+      font-size: 20px;
+      color: #000;
+  }
+  .logo p{
+      font-weight: 700;
+      font-size: 30px;
+  }
+
+  /* footer section */
+  .footer-section{
+      background-color: var(--green);
+      padding: 3rem 0;
+      color: #fff;
+      font-size: 18px;
+  }
+  .footer-wrapper{
+      display: flex;
+      justify-content: space-between;
+  }
+  .Project-name{
+      align-self: center;
+  }
+  .footer-heading{
+      font-size: 25px;
+      color: yellow;
+      font-weight: 600;
+  }
+  .footer-items li, .footer-heading{
+      margin-bottom: 1rem;
+  }
+
+  /* main section */
+  .sign-in{
+      background-color: #0E4C92;
+      padding: 3rem 0;
+  }
+  .form-div{
+      color: #fff;
+      display: flex;
       justify-content: center;
-    }
+      align-items: center;
   }
-  .div-5 {
-    color: #000;
-    align-self: center;
-    margin: auto 0;
-    font: 400 24px Inter, sans-serif;
+  .intro{
+      margin-bottom: 1rem;
   }
-  .div-6 {
-    color: #000;
-    margin: auto 0;
-    font: 400 24px Inter, sans-serif;
+  .intro h1{
+      font-size: 40px;
+      margin-bottom: 0.5rem;
   }
-  .div-7 {
-    color: #000;
-    align-self: center;
-    margin: auto 0;
-    font: 400 24px Inter, sans-serif;
+  .intro p{
+      font-size: 18px;
+      margin-bottom: 0.5rem;
   }
-  .div-8 {
-    color: #000;
-    margin: auto 0;
-    font: 400 24px Inter, sans-serif;
+  form{
+      width: 70%;
   }
-  .div-9 {
-    color: #000;
-    margin: auto 0;
-    font: 400 24px Inter, sans-serif;
+  .form-heading{
+      text-align: center;
+      font-size: 40px;
   }
-  .div-10 {
-    color: #000;
-    border-radius: 25px;
-    border: 1px solid #000;
-    background-color: #ffd700;
-    align-self: stretch;
-    flex-grow: 1;
-    justify-content: center;
-    align-items: start;
-    padding: 15px 13px;
-    font: 400 24px Inter, sans-serif;
+  form h3{
+      font-size: 22px;
+      margin-bottom: 1rem;
   }
-  .div-11 {
-    color: #000;
-    text-decoration-line: underline;
-    align-self: center;
-    margin: auto 0;
-    font: 400 24px Inter, sans-serif;
+  .form-group{
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 1rem;
   }
-  .div-12 {
-    border-radius: 30px;
-    background-color: #036;
-    align-self: stretch;
-    display: flex;
-    margin-top: 94px;
-    width: 100%;
-    flex-direction: column;
-    padding: 44px 20px;
+  input, button{
+      font-size: 17px;
+      border: none;
+      outline: none;
+      border-radius: 5px;
+      background-color: #fff;
   }
-  @media (max-width: 991px) {
-    .div-12 {
-      max-width: 100%;
-      margin-top: 40px;
-    }
+  .form-group input{
+      padding: 1rem 1.25rem;
   }
-  .div-13 {
-    display: flex;
-    width: 100%;
-    flex-direction: column;
-    padding: 0 76px 0 37px;
+  .form-group label{
+      margin-bottom: 0.5rem;
+      font-weight: 600;
+      border: none;
+      outline: none;
+      font-size: 18px;
   }
-  @media (max-width: 991px) {
-    .div-13 {
-      max-width: 100%;
-      padding: 0 20px;
-    }
-  }
-  .div-14 {
-    color: #fff;
-    margin-left: 120px;
-    font: 700 40px/62px Inter, sans-serif;
-  }
-  @media (max-width: 991px) {
-    .div-14 {
-      margin-left: 10px;
-    }
-  }
-  .div-15 {
-    align-items: center;
-    border: 1px solid #696969;
-    background-color: #d9d9d9;
-    align-self: stretch;
-    display: flex;
-    margin-top: 67px;
-    height: 102px;
-    flex-direction: column;
-  }
-  @media (max-width: 991px) {
-    .div-15 {
-      max-width: 100%;
-      margin-top: 40px;
-    }
-  }
-  .div-16 {
-    color: #fff;
-    align-self: stretch;
-    margin-top: 29px;
-    font: 700 24px/37px Open Sans, sans-serif;
-  }
-  @media (max-width: 991px) {
-    .div-16 {
-      max-width: 100%;
-    }
-  }
-  .div-17 {
-    align-items: center;
-    border: 1px solid #696969;
-    background-color: #d9d9d9;
-    align-self: stretch;
-    display: flex;
-    margin-top: 10px;
-    height: 50px;
-    flex-direction: column;
-  }
-  @media (max-width: 991px) {
-    .div-17 {
-      max-width: 100%;
-    }
-  }
-  .div-18 {
-    color: #fff;
-    align-self: stretch;
-    margin-top: 107px;
-    font: 700 24px/37px Open Sans, sans-serif;
-  }
-  @media (max-width: 991px) {
-    .div-18 {
-      max-width: 100%;
-      margin-top: 40px;
-    }
-  }
-  .div-19 {
-    align-items: center;
-    border: 1px solid #696969;
-    background-color: #d9d9d9;
-    align-self: stretch;
-    display: flex;
-    margin-top: 10px;
-    height: 50px;
-    flex-direction: column;
-  }
-  @media (max-width: 991px) {
-    .div-19 {
-      max-width: 100%;
-    }
-  }
-  .div-20 {
-    color: #fff;
-    align-self: stretch;
-    margin-top: 106px;
-    font: 700 24px/37px Open Sans, sans-serif;
-  }
-  @media (max-width: 991px) {
-    .div-20 {
-      max-width: 100%;
-      margin-top: 40px;
-    }
-  }
-  .div-21 {
-    align-items: center;
-    border: 1px solid #696969;
-    background-color: #d9d9d9;
-    align-self: stretch;
-    display: flex;
-    margin-top: 4px;
-    height: 50px;
-    flex-direction: column;
-  }
-  @media (max-width: 991px) {
-    .div-21 {
-      max-width: 100%;
-    }
-  }
-  .div-22 {
-    color: #fff;
-    align-self: stretch;
-    margin-top: 106px;
-    font: 700 24px/37px Open Sans, sans-serif;
-  }
-  @media (max-width: 991px) {
-    .div-22 {
-      max-width: 100%;
-      margin-top: 40px;
-    }
-  }
-  .div-23 {
-    align-items: center;
-    border: 1px solid #696969;
-    background-color: #d9d9d9;
-    align-self: stretch;
-    display: flex;
-    margin-top: 10px;
-    height: 50px;
-    flex-direction: column;
-  }
-  @media (max-width: 991px) {
-    .div-23 {
-      max-width: 100%;
-    }
-  }
-  .div-24 {
-    color: #fff;
-    align-self: stretch;
-    margin-top: 140px;
-    font: 700 24px/37px Open Sans, sans-serif;
-  }
-  @media (max-width: 991px) {
-    .div-24 {
-      max-width: 100%;
-      margin-top: 40px;
-    }
-  }
-  .div-25 {
-    align-items: center;
-    border: 1px solid #696969;
-    background-color: #d9d9d9;
-    align-self: stretch;
-    display: flex;
-    margin-top: 4px;
-    height: 50px;
-    flex-direction: column;
-  }
-  @media (max-width: 991px) {
-    .div-25 {
-      max-width: 100%;
-    }
-  }
-  .div-26 {
-    color: #fff;
-    text-decoration-line: underline;
-    max-width: 246px;
-    align-self: center;
-    margin-top: 42px;
-    font: 700 40px/62px Inter, sans-serif;
-  }
-  @media (max-width: 991px) {
-    .div-26 {
-      margin-top: 40px;
-    }
-  }
-  .div-27 {
-    color: #000;
-    justify-content: center;
-    align-items: center;
-    border-radius: 9px;
-    background-color: #fff;
-    align-self: center;
-    margin-top: 68px;
-    width: 333px;
-    max-width: 100%;
-    padding: 11px 20px;
-    font: 600 22px/34px Inter, sans-serif;
-  }
-  @media (max-width: 991px) {
-    .div-27 {
-      margin-top: 40px;
-    }
-  }
-  .div-28 {
-    color: #fff;
-    max-width: 1327px;
-    align-self: center;
-    margin-top: 53px;
-    font: 600 32px/50px Inter, sans-serif;
-  }
-  @media (max-width: 991px) {
-    .div-28 {
-      max-width: 100%;
-      margin-top: 40px;
-    }
-  }
-  .div-29 {
-    align-self: center;
-    display: flex;
-    align-items: start;
-    justify-content: space-between;
-    gap: 20px;
-    margin: 69px 0 35px;
-  }
-  @media (max-width: 991px) {
-    .div-29 {
-      max-width: 100%;
-      flex-wrap: wrap;
-      margin-top: 40px;
-    }
-  }
-  .div-30 {
-    background-color: #d9d9d9;
-    display: flex;
-    width: 30px;
-    height: 30px;
-    flex-direction: column;
-  }
-  .div-31 {
-    color: #fff;
-    margin-top: 6px;
-    flex-grow: 1;
-    flex-basis: auto;
-    font: 700 32px Inter, sans-serif;
-  }
-  @media (max-width: 991px) {
-    .div-31 {
-      max-width: 100%;
-    }
-  }
-  .div-32 {
-    background-color: #00621c;
-    align-self: stretch;
-    display: flex;
-    width: 100%;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 50px 20px;
-  }
-  @media (max-width: 991px) {
-    .div-32 {
-      max-width: 100%;
-    }
-  }
-  .div-33 {
-    display: flex;
-    width: 100%;
-    max-width: 1141px;
-    justify-content: space-between;
-    gap: 20px;
-    margin: 5px 0 44px;
-  }
-  @media (max-width: 991px) {
-    .div-33 {
-      max-width: 100%;
-      flex-wrap: wrap;
+  .wrapper{
+      display: flex;
+      flex-direction: column;
       justify-content: center;
-      margin-bottom: 40px;
-    }
+      align-items: center;
+      color: #fff;
   }
-  .div-34 {
-    display: flex;
-    flex-grow: 1;
-    flex-basis: 0%;
-    flex-direction: column;
+  .wallet{
+      margin-bottom: 2rem;
+      max-width: 400px;
   }
-  .div-35 {
-    color: #ffd700;
-    text-align: center;
-    font: 400 48px Inter, sans-serif;
+  .wallet p{
+      font-size: 28px;
+      position: relative;
   }
-  @media (max-width: 991px) {
-    .div-35 {
-      font-size: 40px;
-    }
+  .wallet p::after{
+      content: "";
+      position: absolute;
+      bottom: -6px;
+      height: 3px;
+      background-color: #fff;
+      width: 100%;
+      left: 50%;
+      transform: translateX(-50%);
+      transition: 0.5s;
+
   }
-  .div-36 {
-    color: #fff;
-    margin-top: 38px;
-    font: 400 32px Inter, sans-serif;
+  .one-font{
+      font-size: 20px;
   }
-  .div-37 {
-    color: #fff;
-    margin: auto 0;
-    font: 400 32px Inter, sans-serif;
+  .subscribe button{
+      background-color: #fff;
+      outline: none;
+      border: none;
+      color: #000;
+      font-size: 20px;
+      padding: 0.5rem 2rem;
+      cursor: pointer;
+      margin-bottom: 2rem;
   }
-  .div-38 {
-    align-self: start;
-    display: flex;
-    flex-grow: 1;
-    flex-basis: 0%;
-    flex-direction: column;
-    align-items: center;
+  .description{
+      margin-bottom: 2rem;
   }
-  .div-39 {
-    color: #ffd700;
-    text-align: center;
-    font: 400 48px Inter, sans-serif;
+  /* newsletter */
+  .newsletter{
+      display: flex;
+      justify-content: center;
+      margin-top: 4rem;
+      gap: 2rem;
+      align-items: center;
   }
-  @media (max-width: 991px) {
-    .div-39 {
-      font-size: 40px;
-    }
+  .newsletter p{
+      font-size: 18px;
   }
-  .div-40 {
-    color: #fff;
-    align-self: stretch;
-    margin-top: 35px;
-    font: 400 32px Inter, sans-serif;
+  .tick-box{
+      width: 15px;
+      height: 15px;
+      background-color: #D3D3D3;
   }
 </style>
